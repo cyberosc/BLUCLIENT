@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.acktos.bluclient.presentation.RequestDetailActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/card_driver_information">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_profile" />
+
+            <TextView
+                android:id="@+id/txt_driver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_profile"
+                android:layout_toEndOf="@+id/img_profile"
+                android:layout_alignTop="@+id/img_profile"
+                android:layout_marginBottom="8dp"
+                style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+            <TextView
+                android:id="@+id/txt_driver_plate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_driver_name"
+                android:layout_alignLeft="@+id/txt_driver_name"
+                android:layout_alignStart="@+id/txt_driver_name"
+                android:textAllCaps="true"
+                style="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_driver_information"
+        android:id="@+id/card_resume_places">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ic_zone"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/ic_zone"
+                android:tint="@color/primary_dark_material_light"/>
+
+
+            <TextView
+                android:id="@+id/lbl_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ic_zone"
+                android:layout_alignBottom="@+id/ic_zone"
+                android:layout_toRightOf="@+id/ic_zone"
+                android:layout_toEndOf="@+id/ic_zone"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/ic_pickup"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/ic_zone"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/ic_pickup_address" />
+
+
+            <TextView
+                android:id="@+id/lbl_pickup_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ic_pickup"
+                android:layout_alignBottom="@+id/ic_pickup"
+                android:layout_toRightOf="@+id/ic_pickup"
+                android:layout_toEndOf="@+id/ic_pickup"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:id="@+id/ic_arrival"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/ic_pickup"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/ic_arrival" />
+
+            <TextView
+                android:id="@+id/lbl_arrival_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_arrival"
+                android:layout_toEndOf="@+id/ic_arrival"
+                android:layout_alignTop="@id/ic_arrival"
+                android:layout_alignBottom="@+id/ic_arrival"
+                android:gravity="center_vertical" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_resume_places"
+        android:id="@+id/card_resume_payment">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ic_payment"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/ic_credit_card"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:tint="@color/primary_dark_material_light"/>
+
+
+            <TextView
+                android:id="@+id/txt_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ic_payment"
+                android:layout_alignBottom="@+id/ic_payment"
+                android:layout_toRightOf="@+id/ic_payment"
+                android:layout_toEndOf="@id/ic_payment"
+                android:gravity="center_vertical" />
+
+            <ImageView
+                android:id="@+id/ic_amount"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/ic_amount"
+                android:layout_below="@+id/ic_payment"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:tint="@color/primary_dark_material_light"/>
+
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_amount"
+                android:layout_toEndOf="@+id/ic_amount"
+                android:layout_alignTop="@id/ic_amount"
+                android:layout_alignBottom="@+id/ic_amount"
+                android:gravity="center_vertical" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

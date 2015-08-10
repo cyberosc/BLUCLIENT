@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.acktos.bluclient.presentation.SingoutActivity">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/signout_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical|center_horizontal"/>
+
+
+    <ScrollView
+        android:id="@+id/signout_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/layout_signout_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <!-- NAME-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtx_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- LAST_NAME-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtx_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/last_name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- EMAIL-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtx_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email" />
+
+    </android.support.design.widget.TextInputLayout>
+
+            <!-- EMAIL-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_cc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtx_cc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/cc" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+    <!-- PHONE-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtx_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/phone" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- PASSWORD-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_pswrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtx_pswrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/password" />
+
+    </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_add_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="@string/sign_up"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

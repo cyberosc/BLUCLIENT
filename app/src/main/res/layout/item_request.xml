@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/ic_pickup"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/ic_pickup_address" />
+
+
+        <TextView
+            android:id="@+id/lbl_pickup_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ic_pickup"
+            android:layout_alignBottom="@+id/ic_pickup"
+            android:layout_toRightOf="@+id/ic_pickup"
+            android:gravity="center_vertical"
+            android:text="Cra 79 # 10 d 95 apto 604"/>
+
+        <ImageView
+            android:id="@+id/ic_arrival"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_below="@id/ic_pickup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/ic_arrival" />
+
+        <TextView
+            android:id="@+id/lbl_arrival_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ic_arrival"
+            android:layout_alignTop="@id/ic_arrival"
+            android:layout_alignBottom="@+id/ic_arrival"
+            android:gravity="center_vertical"
+            android:text="Calle 57 b # 37 a 45 sur" />
+
+        <TextView
+            android:id="@+id/lbl_request_id"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:text="9" />
+
+        <TextView
+            android:id="@+id/lbl_request_state"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/lbl_request_id"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:textSize="12sp"
+            android:text="Aprobado" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#999999"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lbl_arrival_address"/>
+
+    </RelativeLayout>

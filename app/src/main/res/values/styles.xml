@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/material_primary</item>
+        <item name="colorPrimaryDark">@color/material_primary_dark</item>
+        <item name="colorAccent">@color/material_accent</item>
+        <item name="colorButtonNormal">@color/material_primary_dark</item>
+
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="NavigationTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary_dark_material_light</item>
+        <item name="colorPrimaryDark">@color/material_primary_dark</item>
+        <item name="colorAccent">@color/material_accent</item>
+        <item name="colorButtonNormal">@color/material_primary_dark</item>
+    </style>
+
+</resources>
